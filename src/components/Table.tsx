@@ -16,11 +16,9 @@ interface Props {
 
 class TableComponent extends Component<Props> {
 
-
   render() {
 
     const { data } = this.props;
-
 
     return (
       <table className='table'>
@@ -32,7 +30,6 @@ class TableComponent extends Component<Props> {
         </thead>
         <tbody>
         {data.map((item) => (
-
             <tr key={item.name}>
               <td>{item.name}</td>
               <td>{item.value}{item.unit}</td>

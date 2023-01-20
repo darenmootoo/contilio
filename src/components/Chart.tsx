@@ -11,7 +11,6 @@ import {
 import { Bar } from 'react-chartjs-2';
 import './Chart.scss'
 
-
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -31,7 +30,6 @@ interface Attributes extends Array<Attribute> { }
 interface Props {
   data: Attributes;
 }
-
 
 class BarChart extends Component<Props> {
   render() {

@@ -11,15 +11,12 @@ interface Attribute {
 
 interface Attributes extends Array<Attribute> { }
 
-
-
 interface Data { attributes: Attributes, title: string }
 
 interface State {
     data: Data[],
     isLoading: boolean;
     currentItem: number;
-
 }
 
 class Dashboard extends Component<{}, State> {
@@ -27,7 +24,6 @@ class Dashboard extends Component<{}, State> {
         data: [] as Data[],
         isLoading: true,
         currentItem: 0,
-
     };
 
     async componentDidMount() {
@@ -45,8 +41,6 @@ class Dashboard extends Component<{}, State> {
         } catch (error) {
             console.log(error);
         }
-
-
     }
 
 

@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-
-
 interface Attribute {
   name: string;
   value: number;
   unit: string;
 }
 
-interface Attributes extends Array<Attribute> {}
+interface Attributes extends Array<Attribute> { }
 
 interface Props {
   data: Attributes;
@@ -31,7 +29,6 @@ class Range extends Component<Props, State> {
 
     return (
       <div>
-       
         <input
           type="range"
           min={0}
