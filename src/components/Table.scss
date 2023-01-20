@@ -1,0 +1,14 @@
+.table {
+  table,
+  th,
+  td {
+    border: 1px solid;
+    padding: 10px;
+  }
+  tr,
+  td {
+    &:first-letter {
+      text-transform: capitalize;
+    }
+  }
+}

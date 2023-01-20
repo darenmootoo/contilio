@@ -1,0 +1,9 @@
+.chart {
+  &__container {
+ width: 400px;
+    @media (min-width: 500px) {
+      width: 600px;
+
+    }
+  }
+}
